@@ -25,7 +25,7 @@ public abstract class Loader
         validExtensions = new ArrayList<String>();
 	validExtensions.add("");
         packageDirectory = getClass().getClassLoader().getResource("").getPath();
-	packageDirectory = packageDirectory.substring(0, packageDirectory.lastIndexOf("bin/"));
+	packageDirectory = packageDirectory.substring(0, packageDirectory.lastIndexOf("classes/"));
 	setPath(path);
 	setLoader(loader);
         System.out.println("Package Directory "+packageDirectory);

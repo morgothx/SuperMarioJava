@@ -99,7 +99,7 @@ public class Map
 	try 
         {
             String packageDirectory = getClass().getClassLoader().getResource("").getPath();
-            packageDirectory = packageDirectory.substring(0, packageDirectory.lastIndexOf("bin/"));
+            packageDirectory = packageDirectory.substring(0, packageDirectory.lastIndexOf("classes/"));
             InputStream is = new FileInputStream(packageDirectory + MAP_PATH + "/"+fileName);
             InputStreamReader isr = new InputStreamReader(is);
             br = new BufferedReader(isr);
